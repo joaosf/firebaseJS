@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <!-- bootstrap -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+        <!-- Firebase -->
+        <script src="https://www.gstatic.com/firebasejs/5.5.2/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/5.5.2/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/5.5.2/firebase-database.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/5.5.2/firebase-firestore.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/5.5.2/firebase-messaging.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/5.5.2/firebase-functions.js"></script>
+
+        <script src="controller/app.js"></script>
+    </head>
+    <body style="padding: 10px;">
+        <form onsubmit="">
+            <div class="col-md-4">
+                <input type="text" id="campoDescricao" class="form-control">
+            </div>
+            <div class="col-md-4 form-check">
+                <input type="checkbox" class="form-check-input" id="campoAtivo">
+                <label class="form-check-label" for="campoAtivo">Ativo</label>
+            </div>
+            <div class="col-md-4">
+                <button type="button" class="btn btn-primary" onclick="salvar()">Salvar</button>
+            </div>
+        </form>
+
+        <table id="myTable" class="table table-hover" style="cursor:pointer">
+            <thead class="table-dark">
+                <th>Descrição</th>
+                <th>Ativo</th>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+    </body>
+</html>
