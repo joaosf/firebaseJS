@@ -8,6 +8,24 @@ messagingSenderId: "704830864328"
 };
 firebase.initializeApp(config);
 
+firebase.auth().createUserWithEmailAndPassword("joaosf96@gmail.com", "abc123").catch(function(error) {
+    console.log(error);
+  var errorCode = error.code;
+  var errorMessage = error.message;
+});
+
+firebase.auth().signInWithEmailAndPassword("joaosf96@gmail.com", "abc123").catch(function(error) {
+  console.log(error)
+  var errorCode = error.code;
+  var errorMessage = error.message;
+  // ...
+});
+
+firebase.auth().signOut().then(function() {
+  console.log("Delogou com sucesso!");
+}).catch(function(error) {
+  console.log("Não deslogou.");
+});
 
 firebase.database().ref('Categorias').on('value', function (snapshot) {
     var table = document.getElementById("myTable").getElementsByTagName("tbody")[0];
