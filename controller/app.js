@@ -1,10 +1,10 @@
 var config = {
-apiKey: "AIzaSyATRVUOy2ml3p0Yk2tCoaRH4TH4ebt3v8o",
-authDomain: "aulavirtual-f5514.firebaseapp.com",
-databaseURL: "https://aulavirtual-f5514.firebaseio.com",
-projectId: "aulavirtual-f5514",
-storageBucket: "aulavirtual-f5514.appspot.com",
-messagingSenderId: "704830864328"
+apiKey: "",
+authDomain: "",
+databaseURL: "",
+projectId: "",
+storageBucket: "",
+messagingSenderId: ""
 };
 firebase.initializeApp(config);
 
