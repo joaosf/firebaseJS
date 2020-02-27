@@ -8,13 +8,13 @@ messagingSenderId: ""
 };
 firebase.initializeApp(config);
 
-firebase.auth().createUserWithEmailAndPassword("joaosf96@gmail.com", "abc123").catch(function(error) {
+firebase.auth().createUserWithEmailAndPassword("email@gmail.com", "abc123").catch(function(error) {
     console.log(error);
   var errorCode = error.code;
   var errorMessage = error.message;
 });
 
-firebase.auth().signInWithEmailAndPassword("joaosf96@gmail.com", "abc123").catch(function(error) {
+firebase.auth().signInWithEmailAndPassword("email@gmail.com", "abc123").catch(function(error) {
   console.log(error)
   var errorCode = error.code;
   var errorMessage = error.message;
